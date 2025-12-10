@@ -50,6 +50,15 @@
   font-family: var(--font-mona);
 }
 
+.lora-text {
+  font-family: var(--font-lora);
+}
+
+.lora-bold {
+  font-family: var(--font-lora);
+  font-weight: 700;
+}
+
 .stalemate-text {
   font-family: var(--font-stalemate);
 }
@@ -125,6 +134,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 5s linear infinite;
+  }
 }
 
 @layer base {

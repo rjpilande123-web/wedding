@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Kapakana, Mona_Sans, Stalemate, Domine } from "next/font/google";
+import { Kapakana, Mona_Sans, Stalemate, Domine, Lora } from "next/font/google";
 
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  weight: ["400", "700"], 
   subsets: ["latin"],
 });
 
@@ -49,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${kapakana.variable} ${stalemate.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kapakana.variable} ${stalemate.variable} ${lora.variable} antialiased`}
       >
         {children}
       </body>
