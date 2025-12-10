@@ -28,7 +28,8 @@ export default function Home() {
   const [selectedGuests, setSelectedGuests] = useState([])
   const [filteredGuests, setFilteredGuests] = useState([])
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
+
 
   const handleSearchChange = (e) => {
     const value = e.target.value
