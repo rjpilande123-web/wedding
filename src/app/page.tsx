@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel"
 import { X } from "lucide-react"
 import emailjs from "@emailjs/browser"
+import { toast } from "sonner"
 
 const GUEST_LIST = [
   "Rony Pilande",
@@ -109,21 +110,21 @@ export default function Home() {
       attendance: form.current?.attendance?.value || "No response",
     }
 
-    emailjs
-      .send(
-        "service_8c0x7a7",
-        "template_tiy1kvq",
-        templateParams,
-        "CayUjwp0k8rhkHzqQ"
-      )
-      .then(
-        (result) => {
-          console.log("Email sent!", result.text)
-        },
-        (error) => {
-          console.error("Email error:", error)
-        }
-      )
+    emailjs.send("service_8c0x7a7", "template_tiy1kvq", templateParams, "CayUjwp0k8rhkHzqQ").then(
+      (result) => {
+        console.log("Email sent!", result.text)
+        toast.success("Thank You!", {
+          description: "Thank you for your response. We look forward to celebrating with you!",
+        })
+        // Reset form fields
+        setSelectedGuests([])
+        setSearchInput("")
+        setFilteredGuests([])
+      },
+      (error) => {
+        console.error("Email error:", error)
+      },
+    )
   }
 
   const handleClick = () => setIsOpened(true)
