@@ -250,7 +250,7 @@ export default function Home() {
                       <div className="relative w-full max-w-md px-6 mt-4">
                         <form ref={form} onSubmit={sendEmail} className="space-y-6">
                           <div className="flex justify-center flex-wrap">
-                            <img src="/images/rsvp.png" alt="title" className="w-30" />
+                            <img src="/images/RSVP.png" alt="title" className="w-30" />
                             <p className="text-center text-black text-xs text-pretty">
                               Please confirm your attendance and enter the names of all guests attending.
                             </p>
