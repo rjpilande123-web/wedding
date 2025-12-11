@@ -60,7 +60,8 @@ const GUEST_LIST = [
   "Jonah Kezia Andrino",
   "Elizabeth Dumadaog",
   "Nanette Velasco",
-  "Jean Yaptinchay"
+  "Jean Yaptinchay",
+  "Dhave Racaza"
 ];
 
 
