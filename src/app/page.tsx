@@ -39,7 +39,7 @@ const GUEST_LIST = [
   "Rhian Joy Baylon",
   "Athena Faith Namuco",
   "Rica Joy Baylon",
-  "Gysel Gabad",
+  "Gisselle Gabad",
   "Joel Menaje",
   "Gabriel Oliver Carreon",
   "John Allen Menaje",
