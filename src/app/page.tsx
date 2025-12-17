@@ -46,7 +46,7 @@ const GUEST_LIST = [
   "Frances Claire Garcia",
   "Marian Bo",
   "Yadah Sheneniah Yanson",
-  "Arjhay Diaz",
+  "Mariel Alabastro",
   "Azariah Matthew Yanson",
   "Joan Pereira",
   "Leonardo Yanson",
